@@ -1291,8 +1291,8 @@
     closeInfoModal();
     
     // Calculate amount in paise (Razorpay uses paise for INR)
-    // $20 = ₹1,640 (assuming 1 USD = 82 INR)
-    const amountInINR = qty * PRICE_PER_TICKET * 82;
+    // $20 = ₹1,640 (assuming 1 USD = 100 INR)
+    const amountInINR = qty * PRICE_PER_TICKET * 100;
     const amountInPaise = amountInINR * 100;
     
     // Razorpay options
@@ -1408,3 +1408,4 @@
 </script>
 </body>
 </html>
+
